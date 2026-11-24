@@ -1,0 +1,2491 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050507" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="author" content="Jorge Flechas" />
+
+  <title>Jorge Flechas | Trafficker Digital y Editor de Video</title>
+  <meta name="description" content="Jorge Flechas, estratega digital, trafficker y editor de video. Campanas de alto rendimiento en Google Ads, Meta Ads y TikTok Ads con creatividad, datos y piezas audiovisuales que convierten." />
+  <link rel="canonical" href="https://flechastrafik.online/" />
+
+  <!-- Vista previa al compartir el enlace (WhatsApp, Instagram, LinkedIn...) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:site_name" content="Jorge Flechas" />
+  <meta property="og:url" content="https://flechastrafik.online/" />
+  <meta property="og:title" content="Jorge Flechas | Trafficker Digital y Editor de Video" />
+  <meta property="og:description" content="Campanas de alto rendimiento en Google, Meta y TikTok. Estrategia, pauta y video ads que convierten atencion en ventas." />
+  <meta property="og:image" content="https://flechastrafik.online/assets/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Jorge Flechas, trafficker digital y editor de video" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jorge Flechas | Trafficker Digital y Editor de Video" />
+  <meta name="twitter:description" content="Campanas de alto rendimiento en Google, Meta y TikTok. Estrategia, pauta y video ads que convierten atencion en ventas." />
+  <meta name="twitter:image" content="https://flechastrafik.online/assets/og-cover.jpg" />
+
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="96x96" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="assets/jorge-portrait-shadow-800.jpg"
+        imagesrcset="assets/jorge-portrait-shadow-480.jpg 320w, assets/jorge-portrait-shadow-800.jpg 533w, assets/jorge-portrait-shadow-750.jpg 750w, assets/jorge-portrait-shadow.jpeg 1066w"
+        imagesizes="(max-width: 720px) 92vw, (max-width: 1040px) 88vw, 480px" fetchpriority="high" />
+
+  <script src="assets/js/boot.js?v=2"></script>
+  <style>
+    :root {
+      --black: #050507;
+      --ink: #0a0b0f;
+      --paper: #f1efe9;
+      --muted: #9b9a95;
+      --line: rgba(241, 239, 233, 0.14);
+      --red: #ff334e;
+      --cyan: #30e3ff;
+      --gold: #d8ff68;
+      --glass: rgba(255, 255, 255, 0.055);
+      --shadow: 0 30px 90px rgba(0, 0, 0, 0.46);
+      --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--black);
+      color: var(--paper);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      overflow-x: hidden;
+      font-family: var(--font-sans);
+      background:
+        radial-gradient(circle at 18% 18%, rgba(255, 51, 78, 0.13), transparent 26rem),
+        radial-gradient(circle at 86% 36%, rgba(48, 227, 255, 0.10), transparent 28rem),
+        linear-gradient(180deg, #020203 0%, #090a0d 48%, #050507 100%);
+    }
+
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      pointer-events: none;
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.52'/%3E%3C/svg%3E");
+      mix-blend-mode: overlay;
+      opacity: 0.18;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body.intro-active {
+      overflow: hidden;
+    }
+
+    .intro-gate {
+      position: fixed;
+      inset: 0;
+      z-index: 24;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      color: var(--paper);
+      background:
+        radial-gradient(circle at 50% 44%, rgba(48, 227, 255, 0.16), transparent 18rem),
+        radial-gradient(circle at 50% 68%, rgba(255, 51, 78, 0.14), transparent 22rem),
+        linear-gradient(180deg, #020203 0%, #07080b 100%);
+      isolation: isolate;
+    }
+
+    .intro-gate.is-hidden {
+      pointer-events: none;
+    }
+
+    .intro-grid {
+      position: absolute;
+      inset: 0;
+      opacity: 0.28;
+      background-image:
+        linear-gradient(rgba(241, 239, 233, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(241, 239, 233, 0.07) 1px, transparent 1px);
+      background-size: 58px 58px;
+      mask-image: radial-gradient(circle at center, black 0 46%, transparent 72%);
+    }
+
+    .intro-scan {
+      position: absolute;
+      inset: -30% 0 auto;
+      height: 44vh;
+      background: linear-gradient(180deg, transparent, rgba(48, 227, 255, 0.13), transparent);
+      filter: blur(1px);
+      animation: introScan 2.7s ease-in-out infinite;
+    }
+
+    @keyframes introScan {
+      0% {
+        transform: translateY(-38vh);
+        opacity: 0;
+      }
+      35%,
+      70% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(112vh);
+        opacity: 0;
+      }
+    }
+
+    .intro-hud {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1.1fr) minmax(240px, 0.75fr);
+      gap: 34px;
+      align-items: center;
+      width: min(1180px, calc(100vw - 48px));
+    }
+
+    .intro-label,
+    .intro-status,
+    .intro-metric {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .intro-label {
+      color: var(--red);
+    }
+
+    .intro-title {
+      margin: 18px 0;
+      max-width: 440px;
+      font-size: clamp(2.1rem, 4.2vw, 4.25rem);
+      line-height: 0.92;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .intro-copy {
+      max-width: 360px;
+      margin: 0;
+      color: rgba(241, 239, 233, 0.64);
+      line-height: 1.65;
+    }
+
+    .intro-core {
+      position: relative;
+      display: grid;
+      min-height: 520px;
+      place-items: center;
+      perspective: 1000px;
+    }
+
+    .robot-orbit {
+      position: absolute;
+      width: min(74vw, 520px);
+      aspect-ratio: 1;
+      border: 1px solid rgba(241, 239, 233, 0.12);
+      border-radius: 50%;
+      transform: rotateX(68deg) rotateZ(-18deg);
+    }
+
+    .robot-orbit::before,
+    .robot-orbit::after {
+      position: absolute;
+      inset: 13%;
+      content: "";
+      border: 1px solid rgba(48, 227, 255, 0.17);
+      border-radius: inherit;
+    }
+
+    .robot-orbit::after {
+      inset: 28%;
+      border-color: rgba(255, 51, 78, 0.22);
+    }
+
+    .robot {
+      position: relative;
+      width: min(54vw, 320px);
+      aspect-ratio: 0.82;
+      transform-style: preserve-3d;
+      filter: drop-shadow(0 38px 90px rgba(0, 0, 0, 0.65));
+    }
+
+    .robot-head {
+      position: absolute;
+      inset: 8% 8% 34%;
+      overflow: hidden;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.2), transparent 20%),
+        linear-gradient(180deg, #26282e, #08090d);
+      border: 1px solid rgba(241, 239, 233, 0.18);
+      border-radius: 26px;
+      box-shadow: inset 0 -30px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    .robot-head::before {
+      position: absolute;
+      inset: 17% 12% auto;
+      height: 34%;
+      content: "";
+      background: linear-gradient(90deg, rgba(48, 227, 255, 0.16), rgba(255, 51, 78, 0.15));
+      border: 1px solid rgba(241, 239, 233, 0.14);
+      border-radius: 999px;
+      box-shadow: 0 0 42px rgba(48, 227, 255, 0.28);
+    }
+
+    .robot-head::after {
+      position: absolute;
+      inset: auto 16% 18%;
+      height: 8px;
+      content: "";
+      background: linear-gradient(90deg, transparent, rgba(216, 255, 104, 0.74), transparent);
+      border-radius: 999px;
+      animation: pulseLine 1.8s ease-in-out infinite;
+    }
+
+    .robot-visor {
+      position: absolute;
+      top: 26%;
+      right: 12%;
+      left: 12%;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 34%;
+      pointer-events: none;
+    }
+
+    .robot-eye {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 18px rgba(48, 227, 255, 0.95), 0 0 54px rgba(48, 227, 255, 0.42);
+    }
+
+    .robot-eye.right {
+      background: var(--red);
+      box-shadow: 0 0 18px rgba(255, 51, 78, 0.95), 0 0 54px rgba(255, 51, 78, 0.42);
+    }
+
+    .eye-tunnel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 27;
+      width: 28px;
+      height: 28px;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 1) 0 5%, rgba(216, 255, 104, 0.82) 8%, rgba(48, 227, 255, 0.42) 18%, rgba(5, 5, 7, 0.98) 48%, rgba(5, 5, 7, 0) 70%),
+        conic-gradient(from 90deg, rgba(48, 227, 255, 0), rgba(48, 227, 255, 0.6), rgba(255, 51, 78, 0.48), rgba(48, 227, 255, 0));
+      border-radius: 50%;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.2);
+      filter: blur(0.2px);
+      mix-blend-mode: screen;
+    }
+
+    .eye-tunnel::after {
+      position: absolute;
+      inset: 24%;
+      content: "";
+      border: 1px solid rgba(241, 239, 233, 0.42);
+      border-radius: inherit;
+      box-shadow: inset 0 0 28px rgba(48, 227, 255, 0.36), 0 0 36px rgba(255, 255, 255, 0.22);
+    }
+
+    .intro-focus-ring {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 28;
+      width: 96px;
+      height: 96px;
+      pointer-events: none;
+      border: 1px solid rgba(48, 227, 255, 0.72);
+      border-radius: 50%;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.2);
+      box-shadow: 0 0 28px rgba(48, 227, 255, 0.32), inset 0 0 24px rgba(255, 255, 255, 0.12);
+    }
+
+    @keyframes pulseLine {
+      50% {
+        opacity: 0.32;
+        transform: scaleX(0.72);
+      }
+    }
+
+    .robot-neck {
+      position: absolute;
+      inset: 60% 36% 22%;
+      background: linear-gradient(180deg, rgba(241, 239, 233, 0.18), rgba(241, 239, 233, 0.03));
+      border: 1px solid rgba(241, 239, 233, 0.12);
+      border-radius: 12px;
+    }
+
+    .robot-body {
+      position: absolute;
+      inset: 70% 18% 4%;
+      background: linear-gradient(180deg, #181a20, #08090d);
+      border: 1px solid rgba(241, 239, 233, 0.13);
+      border-radius: 24px 24px 12px 12px;
+    }
+
+    .intro-panel {
+      display: grid;
+      gap: 14px;
+      padding: 22px;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(241, 239, 233, 0.14);
+      border-radius: 8px;
+      backdrop-filter: blur(18px);
+    }
+
+    .intro-metric {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      color: rgba(241, 239, 233, 0.7);
+      border-bottom: 1px solid rgba(241, 239, 233, 0.1);
+    }
+
+    .intro-metric:last-child {
+      border-bottom: 0;
+    }
+
+    .intro-metric strong {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .intro-status {
+      position: absolute;
+      right: 30px;
+      bottom: 26px;
+      left: 30px;
+      z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      color: rgba(241, 239, 233, 0.56);
+      letter-spacing: 0;
+    }
+
+    .intro-scroll {
+      min-height: 44px;
+      padding: 12px 22px;
+      color: var(--paper);
+      font: inherit;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      background: rgba(241, 239, 233, 0.06);
+      border: 1px solid rgba(241, 239, 233, 0.32);
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 220ms ease, border-color 220ms ease;
+    }
+
+    .intro-scroll:hover {
+      background: rgba(241, 239, 233, 0.14);
+      border-color: rgba(241, 239, 233, 0.7);
+    }
+
+    .intro-shutter {
+      position: absolute;
+      z-index: 4;
+      width: 50vw;
+      height: 100%;
+      background: #050507;
+      transform: scaleX(0);
+      pointer-events: none;
+    }
+
+    .intro-shutter.left {
+      left: 0;
+      transform-origin: left;
+    }
+
+    .intro-shutter.right {
+      right: 0;
+      transform-origin: right;
+    }
+
+    .cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 30;
+      width: 20px;
+      height: 20px;
+      pointer-events: none;
+      border: 1px solid rgba(241, 239, 233, 0.68);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 180ms ease, height 180ms ease, border-color 180ms ease, background 180ms ease;
+      mix-blend-mode: difference;
+    }
+
+    .cursor.is-active {
+      width: 54px;
+      height: 54px;
+      background: rgba(241, 239, 233, 0.12);
+      border-color: rgba(241, 239, 233, 0.94);
+    }
+
+    #webgl {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.86;
+    }
+
+    .page-shell {
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 12;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 34px;
+      background: linear-gradient(180deg, rgba(5, 5, 7, 0.86), rgba(5, 5, 7, 0));
+    }
+
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      display: block;
+      width: auto;
+      height: 32px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      color: rgba(241, 239, 233, 0.72);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding: 10px 0;
+    }
+
+    .nav-links a::after {
+      position: absolute;
+      left: 0;
+      bottom: 4px;
+      width: 100%;
+      height: 1px;
+      content: "";
+      background: var(--red);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 260ms ease;
+    }
+
+    .nav-links a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .section {
+      position: relative;
+      min-height: 100vh;
+      padding: 120px 7vw;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-inner {
+      position: relative;
+      z-index: 2;
+      width: min(1240px, 100%);
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: grid;
+      min-height: 100vh;
+      align-items: center;
+      padding-top: 108px;
+      padding-bottom: 72px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 24px;
+      color: var(--muted);
+      font-family: var(--font-mono);
+      font-size: 0.77rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 38px;
+      height: 1px;
+      content: "";
+      background: var(--red);
+      box-shadow: 0 0 18px var(--red);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin-bottom: 18px;
+      font-size: 3.65rem;
+      line-height: 0.94;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1 span {
+      display: block;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(241, 239, 233, 0.72);
+    }
+
+    .hero-copy {
+      max-width: 650px;
+      color: rgba(241, 239, 233, 0.76);
+      font-size: 1.05rem;
+      line-height: 1.58;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .btn {
+      display: inline-flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 22px;
+      overflow: hidden;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: 1px solid rgba(241, 239, 233, 0.18);
+      border-radius: 999px;
+      transition: transform 280ms ease, border-color 280ms ease, background 280ms ease;
+    }
+
+    .btn.primary {
+      color: var(--black);
+      background: var(--paper);
+      border-color: var(--paper);
+    }
+
+    .btn:hover {
+      border-color: rgba(241, 239, 233, 0.6);
+      transform: translateY(-3px);
+    }
+
+    .hero-media {
+      position: relative;
+      height: min(66vh, 760px);
+      min-height: 500px;
+      isolation: isolate;
+    }
+
+    .portrait-frame {
+      position: absolute;
+      inset: 0 3% 0 10%;
+      overflow: hidden;
+      background: #111;
+      border: 1px solid rgba(241, 239, 233, 0.12);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      transform: rotate(1.5deg);
+    }
+
+    .portrait-frame img {
+      filter: grayscale(1) contrast(1.15);
+      transform: scale(1.08);
+    }
+
+    .signal-card {
+      position: absolute;
+      z-index: 3;
+      right: 0;
+      bottom: 12%;
+      width: min(280px, 52%);
+      padding: 18px;
+      background: rgba(9, 10, 13, 0.74);
+      border: 1px solid rgba(241, 239, 233, 0.16);
+      border-radius: 8px;
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+    }
+
+    .signal-card strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--gold);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+    }
+
+    .signal-card p {
+      margin: 0;
+      color: rgba(241, 239, 233, 0.72);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .ticker {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      gap: 28px;
+      padding: 16px 0;
+      overflow: hidden;
+      color: rgba(241, 239, 233, 0.52);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .ticker-track {
+      display: flex;
+      flex: 0 0 auto;
+      gap: 28px;
+      min-width: max-content;
+      animation: marquee 30s linear infinite;
+    }
+
+    @keyframes marquee {
+      to {
+        transform: translateX(calc(-100% - 28px));
+      }
+    }
+
+    .cinema-grid {
+      display: grid;
+      grid-template-columns: 0.82fr 1.18fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .kicker {
+      color: var(--red);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      max-width: 960px;
+      margin-bottom: 28px;
+      font-size: 4.5rem;
+      line-height: 0.98;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .lead {
+      max-width: 760px;
+      color: rgba(241, 239, 233, 0.74);
+      font-size: 1.08rem;
+      line-height: 1.75;
+    }
+
+    .image-slab {
+      position: relative;
+      height: 74vh;
+      min-height: 520px;
+      overflow: hidden;
+      background: #101114;
+      border: 1px solid rgba(241, 239, 233, 0.14);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .image-slab img {
+      filter: grayscale(1) contrast(1.1);
+      transform: scale(1.12);
+    }
+
+    .image-slab::after,
+    .portrait-frame::after {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.42));
+      pointer-events: none;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: 48px;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+
+    .stat {
+      padding: 24px;
+      background: rgba(5, 5, 7, 0.76);
+    }
+
+    .stat strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    .stat span {
+      color: rgba(241, 239, 233, 0.58);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 46px;
+    }
+
+    .service-card {
+      position: relative;
+      min-height: 380px;
+      padding: 30px;
+      overflow: hidden;
+      background: var(--glass);
+      border: 1px solid rgba(241, 239, 233, 0.14);
+      border-radius: 8px;
+      transition: transform 300ms ease, border-color 300ms ease, background 300ms ease;
+    }
+
+    .service-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(241, 239, 233, 0.3);
+      transform: translateY(-8px);
+    }
+
+    .service-card::before {
+      position: absolute;
+      top: -50px;
+      right: -70px;
+      width: 160px;
+      height: 160px;
+      content: "";
+      background: radial-gradient(circle, rgba(48, 227, 255, 0.28), transparent 65%);
+      opacity: 0;
+      transition: opacity 300ms ease;
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-card .num {
+      color: var(--red);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .service-card h3 {
+      margin: 48px 0 18px;
+      font-size: 1.8rem;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .service-card p {
+      color: rgba(241, 239, 233, 0.66);
+      line-height: 1.64;
+    }
+
+    .service-card ul {
+      display: grid;
+      gap: 10px;
+      padding: 0;
+      margin: 24px 0 0;
+      list-style: none;
+      color: rgba(241, 239, 233, 0.74);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+    }
+
+    .service-card li::before {
+      margin-right: 8px;
+      color: var(--gold);
+      content: ">";
+    }
+
+    .process-wrap {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 54px;
+      align-items: start;
+    }
+
+    .sticky-copy {
+      position: sticky;
+      top: 120px;
+    }
+
+    .process-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .process-step {
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      gap: 24px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(241, 239, 233, 0.13);
+      border-radius: 8px;
+    }
+
+    .process-step span {
+      color: var(--cyan);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .process-step h3 {
+      margin-bottom: 12px;
+      font-size: 1.45rem;
+      text-transform: uppercase;
+    }
+
+    .process-step p {
+      margin: 0;
+      color: rgba(241, 239, 233, 0.66);
+      line-height: 1.65;
+    }
+
+    .split-scene {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+      align-items: stretch;
+    }
+
+    .editor-panel {
+      min-height: 620px;
+      padding: 28px;
+      background:
+        linear-gradient(135deg, rgba(255, 51, 78, 0.08), transparent 46%),
+        rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(241, 239, 233, 0.13);
+      border-radius: 8px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+      margin-top: 54px;
+    }
+
+    .clip {
+      display: grid;
+      grid-template-columns: 84px 1fr auto;
+      gap: 14px;
+      align-items: center;
+      padding: 12px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: rgba(241, 239, 233, 0.76);
+      background: rgba(0, 0, 0, 0.26);
+      border: 1px solid rgba(241, 239, 233, 0.09);
+      border-radius: 8px;
+    }
+
+    .bar {
+      height: 11px;
+      background: linear-gradient(90deg, var(--red), var(--cyan));
+      border-radius: 999px;
+      transform-origin: left;
+    }
+
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 42px;
+    }
+
+    .tool {
+      padding: 18px;
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(241, 239, 233, 0.12);
+      border-radius: 8px;
+    }
+
+    .offer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 44px;
+    }
+
+    .offer {
+      min-height: 460px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(241, 239, 233, 0.14);
+      border-radius: 8px;
+    }
+
+    .offer.featured {
+      background:
+        linear-gradient(160deg, rgba(255, 51, 78, 0.18), rgba(48, 227, 255, 0.08)),
+        rgba(255, 255, 255, 0.065);
+      border-color: rgba(241, 239, 233, 0.34);
+    }
+
+    .offer h3 {
+      margin-bottom: 18px;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+    }
+
+    .offer p {
+      color: rgba(241, 239, 233, 0.68);
+      line-height: 1.65;
+    }
+
+    .offer ul {
+      display: grid;
+      gap: 14px;
+      padding: 0;
+      margin: 28px 0 0;
+      list-style: none;
+    }
+
+    .offer li {
+      color: rgba(241, 239, 233, 0.74);
+      line-height: 1.5;
+    }
+
+    .offer li::before {
+      margin-right: 10px;
+      color: var(--red);
+      content: "+";
+      font-family: var(--font-mono);
+    }
+
+    .faq {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 46px;
+    }
+
+    details {
+      border-top: 1px solid rgba(241, 239, 233, 0.15);
+    }
+
+    details:last-child {
+      border-bottom: 1px solid rgba(241, 239, 233, 0.15);
+    }
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 0;
+      cursor: pointer;
+      font-size: 1.18rem;
+      font-weight: 800;
+      list-style: none;
+      text-transform: uppercase;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      color: var(--red);
+      content: "+";
+      font-family: var(--font-mono);
+      font-size: 1.4rem;
+    }
+
+    details[open] summary::after {
+      content: "-";
+    }
+
+    details p {
+      max-width: 760px;
+      margin-bottom: 24px;
+      color: rgba(241, 239, 233, 0.66);
+      line-height: 1.7;
+    }
+
+    .finale {
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+      text-align: center;
+    }
+
+    .finale .section-inner {
+      display: grid;
+      place-items: center;
+    }
+
+    .finale h2 {
+      max-width: 980px;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 5.7rem;
+    }
+
+    .finale p {
+      max-width: 690px;
+      color: rgba(241, 239, 233, 0.74);
+      font-size: 1.08rem;
+      line-height: 1.75;
+    }
+
+    .contact-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+      margin-top: 28px;
+    }
+
+    .depth-line {
+      position: absolute;
+      z-index: 1;
+      width: 1px;
+      height: 42vh;
+      background: linear-gradient(180deg, transparent, rgba(241, 239, 233, 0.24), transparent);
+      opacity: 0.9;
+    }
+
+    .depth-line.one {
+      top: 20%;
+      left: 11%;
+    }
+
+    .depth-line.two {
+      right: 17%;
+      bottom: 8%;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(44px);
+    }
+
+    @media (max-width: 1040px) {
+      .intro-hud {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        text-align: center;
+      }
+
+      .intro-copy {
+        margin: 0 auto;
+      }
+
+      .intro-core {
+        min-height: 360px;
+      }
+
+      .intro-panel {
+        width: min(520px, 100%);
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 3.7rem;
+      }
+
+      h2,
+      .finale h2 {
+        font-size: 3.6rem;
+      }
+
+      .hero-grid,
+      .cinema-grid,
+      .process-wrap,
+      .split-scene,
+      .faq {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-media,
+      .image-slab {
+        height: 68vh;
+      }
+
+      .services,
+      .offer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .sticky-copy {
+        position: relative;
+        top: auto;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .intro-gate {
+        padding: 22px;
+      }
+
+      .intro-hud {
+        width: 100%;
+      }
+
+      .intro-core {
+        min-height: 300px;
+      }
+
+      .robot {
+        width: min(72vw, 260px);
+      }
+
+      .intro-status {
+        right: 18px;
+        bottom: 18px;
+        left: 18px;
+        gap: 14px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .cursor {
+        display: none;
+      }
+
+      .nav {
+        padding: 18px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .section {
+        padding: 96px 20px;
+      }
+
+      .hero {
+        padding-top: 92px;
+      }
+
+      h1 {
+        font-size: 2.85rem;
+      }
+
+      h2,
+      .finale h2 {
+        font-size: 2.65rem;
+      }
+
+      .hero-copy,
+      .lead,
+      .finale p {
+        font-size: 1rem;
+      }
+
+      .hero-media,
+      .image-slab {
+        min-height: 430px;
+        height: 58vh;
+      }
+
+      .portrait-frame {
+        inset: 0;
+      }
+
+      .signal-card {
+        width: 78%;
+      }
+
+      .stats-row {
+        grid-template-columns: 1fr;
+      }
+
+      .process-step {
+        grid-template-columns: 1fr;
+        padding: 24px;
+      }
+
+      .tool-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .editor-panel {
+        min-height: auto;
+      }
+
+      .clip {
+        grid-template-columns: 62px 1fr;
+      }
+
+      .clip small {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* ================================================================= *
+     *  CORRECCIONES                                                     *
+     *  Este bloque va al final a proposito: al ser el ultimo, gana       *
+     *  sobre las reglas de arriba sin tener que tocarlas.                *
+     * ================================================================= */
+
+    /* --- 1. La web se ve siempre, aunque el JavaScript falle --------- */
+    html.no-js .reveal,
+    html.force-visible .reveal {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
+    }
+
+    html.no-js .intro-gate,
+    html.force-visible .intro-gate {
+      display: none !important;
+    }
+
+    html.no-js body,
+    html.force-visible body {
+      overflow: visible !important;
+    }
+
+    html.no-js .nav, html.force-visible .nav,
+    html.no-js .page-shell, html.force-visible .page-shell {
+      opacity: 1 !important;
+      visibility: visible !important;
+      filter: none !important;
+      transform: none !important;
+    }
+
+    html.no-js #webgl,
+    html.no-js .cursor,
+    html.no-js .nav-toggle {
+      display: none !important;
+    }
+
+    /* Sin JavaScript el menu hamburguesa no puede abrirse, asi que los
+       enlaces se muestran siempre en fila. */
+    @media (max-width: 720px) {
+      html.no-js .nav .nav-links {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px 14px;
+        justify-content: flex-end;
+        max-width: 58%;
+        padding: 0;
+        font-size: 0.64rem;
+        background: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+      }
+
+      html.no-js .nav .nav-links a {
+        min-height: 30px;
+        padding: 2px 0;
+      }
+
+      html.no-js .nav .nav-cta {
+        margin: 0;
+        padding: 5px 12px;
+      }
+    }
+
+    /* --- 2. Arregla position:sticky ---------------------------------- *
+     * overflow-x:hidden convertia el body en contenedor de scroll y eso
+     * rompia la columna fija del metodo. "clip" recorta igual pero sin
+     * romper sticky.                                                     */
+    body { overflow-x: clip; }
+    .section { overflow: clip; }
+
+    @supports not (overflow: clip) {
+      body { overflow-x: hidden; }
+      .section { overflow: hidden; }
+    }
+
+    .process-wrap { align-items: stretch; }
+    .sticky-col { align-self: stretch; }
+    .sticky-copy { position: sticky; top: 120px; }
+
+    @media (max-width: 1040px) {
+      .sticky-copy { position: relative; top: auto; }
+    }
+
+    /* --- 3. Alturas correctas en movil (100vh salta con la barra) ---- */
+    @supports (height: 100svh) {
+      .intro-gate { min-height: 100svh; }
+      .hero { min-height: 100svh; }
+    }
+
+    /* --- 4. El subtitulo del hero era casi ilegible ------------------ */
+    .hero-title span {
+      color: rgba(241, 239, 233, 0.08);
+      -webkit-text-stroke: 1.5px rgba(241, 239, 233, 0.9);
+      paint-order: stroke fill;
+    }
+
+    /* --- 5. Foco visible para teclado -------------------------------- */
+    :focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: -100px;
+      left: 16px;
+      z-index: 40;
+      padding: 14px 20px;
+      color: var(--black);
+      background: var(--gold);
+      border-radius: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: top 200ms ease;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    /* --- 6. Menu movil (antes no existia) ---------------------------- */
+    .nav-toggle {
+      display: none;
+      position: relative;
+      z-index: 16;
+      width: 46px;
+      height: 46px;
+      padding: 0;
+      margin: 0;
+      color: inherit;
+      background: transparent;
+      border: 1px solid rgba(241, 239, 233, 0.22);
+      border-radius: 50%;
+      cursor: pointer;
+      place-items: center;
+      align-content: center;
+      justify-items: center;
+      gap: 5px;
+    }
+
+    .nav-toggle-bar {
+      display: block;
+      width: 18px;
+      height: 1.5px;
+      background: var(--paper);
+      border-radius: 2px;
+      transition: transform 240ms ease, opacity 240ms ease;
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:first-child {
+      transform: translateY(3.25px) rotate(45deg);
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:last-child {
+      transform: translateY(-3.25px) rotate(-45deg);
+    }
+
+    /* El CTA de WhatsApp no va dentro de una pastilla: se separa del menu
+       con un filete, va en lima (el color de accion de toda la web) y lleva
+       un punto que late para decir "disponible ahora".
+       Los selectores llevan .nav-links delante a proposito: '.nav-links a'
+       tiene mas peso que '.nav-cta' y antes se comia el padding lateral. */
+    .nav-links .nav-cta {
+      flex: none;
+      gap: 10px;
+      margin-left: 12px;
+      padding: 10px 0 10px 22px;
+      border-left: 1px solid var(--line);
+      color: var(--gold) !important;
+      background: none;
+      border-radius: 0;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+      transition: color 220ms ease;
+    }
+
+    .nav-links .nav-cta:hover,
+    .nav-links .nav-cta:focus-visible { color: #eaff9c !important; }
+
+    .nav-dot {
+      flex: none;
+      width: 7px;
+      height: 7px;
+      background: var(--gold);
+      border-radius: 50%;
+      animation: nav-latido 2.6s ease-out infinite;
+    }
+
+    @keyframes nav-latido {
+      0%   { box-shadow: 0 0 0 0 rgba(216, 255, 104, 0.55); }
+      70%  { box-shadow: 0 0 0 8px rgba(216, 255, 104, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(216, 255, 104, 0); }
+    }
+
+    /* Subrayado siempre visible, no solo al pasar el raton */
+    .nav-links .nav-cta::after {
+      left: 22px;
+      width: calc(100% - 22px);
+      background: var(--gold);
+      transform: scaleX(1);
+      opacity: 0.4;
+      transition: opacity 240ms ease;
+    }
+
+    .nav-links .nav-cta:hover::after,
+    .nav-links .nav-cta:focus-visible::after { opacity: 1; }
+
+    /* Areas tactiles de 44px minimo */
+    .nav-links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+    }
+
+    @media (max-width: 720px) {
+      .nav-toggle { display: grid; }
+
+      /* La marca se queda por encima del menu desplegado */
+      .nav .brand { position: relative; z-index: 16; }
+
+      .nav .nav-links {
+        position: fixed;
+        inset: 0;
+        z-index: 14;
+        display: grid;
+        gap: 4px;
+        align-content: center;
+        justify-items: center;
+        padding: 32px;
+        font-size: 1.05rem;
+        background: rgba(4, 4, 6, 0.97);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 260ms ease, transform 260ms ease, visibility 260ms;
+      }
+
+      .nav .nav-links.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+      }
+
+      .nav .nav-links a {
+        padding: 14px 26px;
+        min-height: 52px;
+      }
+
+      .nav .nav-links .nav-cta {
+        margin: 16px 0 0;
+        padding: 14px 26px;
+        border-left: 0;
+      }
+
+      .nav .nav-links .nav-cta::after {
+        left: 26px;
+        width: calc(100% - 52px);
+      }
+
+      body.nav-open { overflow: hidden; }
+
+      /* Secciones sin altura minima: en movil solo dejaban huecos vacios */
+      .section { min-height: 0; padding: 84px 20px; }
+      .finale { min-height: 70vh; }
+
+      /* El grano a pantalla completa con mix-blend-mode era el efecto mas
+         caro de toda la web en moviles de gama media. */
+      body::before { display: none; }
+    }
+
+    /* --- 7. Contacto y pie de pagina --------------------------------- */
+    .contact-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      width: min(760px, 100%);
+      margin: 44px auto 0;
+      padding: 0;
+      list-style: none;
+      text-align: left;
+    }
+
+    .contact-list li {
+      display: grid;
+      gap: 6px;
+      padding: 18px 20px;
+      background: var(--glass);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .contact-list span {
+      color: var(--red);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .contact-list a {
+      min-height: 32px;
+      color: var(--paper);
+      font-size: 1rem;
+      font-weight: 700;
+      word-break: break-word;
+      border-bottom: 1px solid transparent;
+      transition: border-color 220ms ease;
+    }
+
+    .contact-list a:hover { border-color: var(--paper); }
+
+    .site-footer {
+      position: relative;
+      z-index: 1;
+      padding: 56px 7vw 40px;
+      background: rgba(2, 2, 3, 0.9);
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 32px;
+      align-items: center;
+      justify-content: space-between;
+      width: min(1240px, 100%);
+      margin: 0 auto;
+    }
+
+    .footer-social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .footer-social a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 18px;
+      color: rgba(241, 239, 233, 0.82);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      transition: border-color 240ms ease, color 240ms ease;
+    }
+
+    .footer-social a:hover {
+      color: var(--paper);
+      border-color: rgba(241, 239, 233, 0.5);
+    }
+
+    .footer-legal {
+      width: 100%;
+      margin: 12px 0 0;
+      color: rgba(241, 239, 233, 0.42);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      line-height: 1.7;
+    }
+
+    /* --- 8. Boton flotante de WhatsApp ------------------------------- *
+     * Solo en movil: en escritorio el menu ya lleva su propio boton.    */
+    .wa-float {
+      display: none;
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 13;
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      height: 52px;
+      padding: 0 20px;
+      color: var(--black);
+      background: var(--gold);
+      border-radius: 999px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: transform 240ms ease;
+    }
+
+    .wa-float:hover { transform: translateY(-3px); }
+
+    body.intro-active .wa-float,
+    body.nav-open .wa-float { display: none; }
+
+    @media (max-width: 720px) {
+      .contact-list { grid-template-columns: 1fr; }
+      .footer-inner { justify-content: flex-start; }
+      .wa-float { display: inline-flex; right: 14px; bottom: 14px; height: 48px; padding: 0 16px; }
+
+      /* Hueco para que el boton flotante no tape los enlaces del pie */
+      .site-footer { padding-bottom: 104px; }
+    }
+
+    /* --- 9. El fondo animado no gasta bateria si no se ve ------------- */
+    @media (prefers-reduced-motion: reduce) {
+      #webgl { display: none; }
+    }
+    /* ================================================================= *
+     *  SECCIONES NUEVAS: certificaciones, mercados, valor, resenas      *
+     * ================================================================= */
+
+    .certs { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:46px; }
+
+    .cert {
+      display:flex; gap:20px; align-items:flex-start;
+      padding:26px 28px; background:var(--glass);
+      border:1px solid var(--line); border-radius:12px;
+    }
+
+    .cert-mark {
+      display:grid; flex:none; place-items:center; width:48px; height:48px;
+      border-radius:12px; background:var(--paper);
+    }
+    .cert-mark svg { display:block; }
+
+    .cert h3 { font-size:1.16rem; font-weight:900; text-transform:uppercase; line-height:1.06; }
+    .cert p  { margin-top:8px; color:rgba(241,239,233,.62); font-size:.9rem; line-height:1.55; }
+
+    .cert-badge {
+      flex:none; align-self:center; margin-left:auto; padding:7px 13px;
+      border:1px solid rgba(216,255,104,.42); border-radius:999px; color:var(--gold);
+      font-family:var(--font-mono); font-size:.56rem; font-weight:700;
+      letter-spacing:.12em; text-transform:uppercase; white-space:nowrap;
+    }
+
+    .cert-note {
+      margin-top:26px; padding-left:16px; border-left:2px solid var(--line);
+      color:rgba(241,239,233,.5); font-size:.88rem; line-height:1.6; max-width:62ch;
+    }
+
+    /* --- mapa --- */
+    .mapa {
+      position:relative; margin-top:48px; padding:30px 22px 26px;
+      background:rgba(241,239,233,.022); border:1px solid var(--line); border-radius:14px;
+    }
+    .mapa img { display:block; width:100%; height:auto; }
+    .mapa-ov {
+      position:absolute; top:30px; right:22px; bottom:26px; left:22px;
+      width:auto; height:auto; pointer-events:none;
+    }
+    .mapa-count {
+      position:absolute; top:16px; left:24px; display:flex; gap:8px; align-items:baseline;
+      font-family:var(--font-mono); font-size:.56rem; font-weight:700;
+      letter-spacing:.14em; text-transform:uppercase; color:rgba(241,239,233,.5);
+    }
+    .mapa-count strong { color:var(--gold); font-family:var(--font-sans); font-size:1.5rem; font-weight:900; }
+
+    .paises { display:flex; flex-wrap:wrap; gap:8px; margin-top:28px; padding:0; list-style:none; }
+    .paises li {
+      padding:8px 14px; border:1px solid var(--line); border-radius:999px;
+      color:rgba(241,239,233,.76); font-family:var(--font-mono); font-size:.62rem;
+      font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+    }
+
+    /* --- que incluye --- */
+    .incluye {
+      display:grid; grid-template-columns:repeat(2,1fr); gap:1px; margin-top:46px;
+      background:var(--line); border:1px solid var(--line); border-radius:12px; overflow:hidden;
+    }
+    .inc { padding:28px 30px; background:#08090c; }
+    .inc span { color:var(--red); font-family:var(--font-mono); font-size:.6rem; font-weight:700; letter-spacing:.12em; }
+    .inc h3 { margin:12px 0 10px; font-size:1.08rem; font-weight:900; text-transform:uppercase; line-height:1.06; }
+    .inc p  { color:rgba(241,239,233,.6); font-size:.9rem; line-height:1.6; }
+
+    /* --- resenas y clientes --- */
+    .resenas { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:46px; }
+    .resena {
+      display:flex; flex-direction:column; padding:28px 28px 24px;
+      background:var(--glass); border:1px solid var(--line); border-radius:12px;
+    }
+    .resena-txt { flex:1; color:rgba(241,239,233,.82); font-size:.95rem; line-height:1.68; }
+    .resena-pie {
+      display:flex; gap:12px; align-items:center; margin-top:24px; padding-top:20px;
+      border-top:1px solid var(--line);
+    }
+    .resena-pie b { display:block; font-size:.92rem; font-weight:800; }
+    .resena-pie small {
+      display:block; margin-top:3px; color:rgba(241,239,233,.5);
+      font-family:var(--font-mono); font-size:.58rem; letter-spacing:.06em; text-transform:uppercase;
+    }
+
+    .clientes { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:46px; }
+    .cliente {
+      display:grid; place-items:center; min-height:96px; padding:18px;
+      background:rgba(241,239,233,.025); border:1px solid var(--line); border-radius:10px;
+      color:rgba(241,239,233,.74); font-family:var(--font-mono); font-size:.66rem;
+      font-weight:700; letter-spacing:.08em; text-transform:uppercase; text-align:center;
+    }
+
+    @media (max-width: 860px) {
+      .certs, .incluye, .resenas { grid-template-columns:1fr; }
+      .clientes { grid-template-columns:repeat(2,1fr); }
+      .cert { flex-wrap:wrap; gap:16px; }
+      .cert-badge { margin-left:0; }
+      .mapa { padding:26px 12px 18px; }
+      .mapa-ov { top:26px; right:12px; bottom:18px; left:12px; }
+      .mapa-count { top:12px; left:14px; font-size:.5rem; }
+      .mapa-count strong { font-size:1.15rem; }
+      .inc { padding:22px 20px; }
+    }
+
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://flechastrafik.online/#negocio",
+        "name": "Jorge Flechas | Trafficker Digital y Editor de Video",
+        "url": "https://flechastrafik.online/",
+        "description": "Estrategia digital, media buying y produccion de video ads para campanas de alto rendimiento en Google Ads, Meta Ads y TikTok Ads.",
+        "areaServed": "Colombia",
+        "availableLanguage": "es",
+        "founder": { "@id": "https://flechastrafik.online/#jorge" },
+        "telephone": "+573041216884",
+        "email": "alpha_blind371@proton.me",
+        "sameAs": ["https://www.instagram.com/jflechas371", "https://www.youtube.com/@FlechasJR"],
+        "knowsAbout": ["Google Ads", "Meta Ads", "TikTok Ads", "Video ads", "Estrategia creativa", "Postproduccion"]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://flechastrafik.online/#jorge",
+        "name": "Jorge Flechas",
+        "jobTitle": "Trafficker digital y editor de video",
+        "url": "https://flechastrafik.online/",
+        "email": "alpha_blind371@proton.me",
+        "telephone": "+573041216884",
+        "sameAs": ["https://www.instagram.com/jflechas371", "https://www.youtube.com/@FlechasJR"]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://flechastrafik.online/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Que tipo de marcas puedes ayudar?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Marcas personales, ecommerce, servicios, negocios locales y proyectos digitales que necesitan convertir mejor su atencion en leads, ventas o autoridad." }
+          },
+          {
+            "@type": "Question",
+            "name": "Trabajas solo pauta o tambien creatividad?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Trabajo ambas capas. La pauta necesita una base tecnica fuerte, pero el rendimiento nace cuando el mensaje, el formato y la edicion capturan atencion con precision." }
+          },
+          {
+            "@type": "Question",
+            "name": "Como mides el exito?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Depende del objetivo: ventas, leads, CPA, ROAS, CTR, calidad de trafico, retencion de video, frecuencia, posicionamiento o crecimiento sostenible del canal." }
+          },
+          {
+            "@type": "Question",
+            "name": "Puedes adaptar contenido para cada plataforma?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Si. Cada plataforma tiene lenguaje, velocidad y patrones de consumo diferentes. Por eso adapto piezas, hooks, duraciones y estructuras para Meta, TikTok, Google y ecommerce." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="intro-active">
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <noscript>
+    <style>
+      .intro-gate, #webgl, .cursor { display: none !important; }
+      .reveal { opacity: 1 !important; transform: none !important; visibility: visible !important; }
+      body { overflow: visible !important; }
+      .nav-toggle { display: none !important; }
+    </style>
+  </noscript>
+
+  <canvas id="webgl" aria-hidden="true"></canvas>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <section class="intro-gate" aria-label="Intro cinematográfica de Jorge Flechas">
+    <div class="intro-grid" aria-hidden="true"></div>
+    <div class="intro-scan" aria-hidden="true"></div>
+    <div class="eye-tunnel" aria-hidden="true"></div>
+    <div class="intro-focus-ring" aria-hidden="true"></div>
+    <div class="intro-shutter left" aria-hidden="true"></div>
+    <div class="intro-shutter right" aria-hidden="true"></div>
+
+    <div class="intro-hud">
+      <div class="intro-copy-block">
+        <p class="intro-label">JF.OS / Motor creativo de alto rendimiento</p>
+        <h2 class="intro-title">Sistema de impacto.</h2>
+        <p class="intro-copy">Sistema preparado para transformar atención en autoridad, tráfico en conversión y contenido en crecimiento medible.</p>
+      </div>
+
+      <div class="intro-core" aria-hidden="true">
+        <div class="robot-orbit"></div>
+        <div class="robot">
+          <div class="robot-head">
+            <div class="robot-visor">
+              <span class="robot-eye left"></span>
+              <span class="robot-eye right"></span>
+            </div>
+          </div>
+          <div class="robot-neck"></div>
+          <div class="robot-body"></div>
+        </div>
+      </div>
+
+      <aside class="intro-panel" aria-label="Estado del sistema creativo">
+        <div class="intro-metric"><span>Análisis del gancho</span><strong>Listo</strong></div>
+        <div class="intro-metric"><span>Pauta digital</span><strong>Sincronizada</strong></div>
+        <div class="intro-metric"><span>Motor audiovisual</span><strong>Armado</strong></div>
+        <div class="intro-metric"><span>Ruta de conversión</span><strong>En línea</strong></div>
+      </aside>
+    </div>
+
+    <div class="intro-status">
+      <span>Desliza o toca para entrar</span>
+      <button type="button" class="intro-scroll" id="introEnter">Abrir experiencia</button>
+      <span>Jorge Flechas</span>
+    </div>
+  </section>
+
+  <nav class="nav" aria-label="Navegación principal">
+    <a class="brand magnetic" href="#inicio" aria-label="Ir al inicio">
+      <img class="brand-mark" src="assets/logo-fjr.png" alt="" width="188" height="288" decoding="async" />
+      <span>Jorge Flechas</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" type="button"
+            aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+      <a class="magnetic" href="#vision">Visión</a>
+      <a class="magnetic" href="#servicios">Servicios</a>
+      <a class="magnetic" href="#metodo">Método</a>
+      <a class="magnetic" href="#mercados">Mercados</a>
+      <a class="magnetic" href="#contacto">Contacto</a>
+      <a class="nav-cta magnetic" href="https://wa.me/573041216884?text=Hola%20Jorge%2C%20vengo%20de%20tu%20web%20y%20quiero%20hablar%20de%20un%20proyecto" target="_blank" rel="noopener noreferrer"><span class="nav-dot" aria-hidden="true"></span>WhatsApp</a>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <section class="section hero" id="inicio">
+      <span class="depth-line one"></span>
+      <div class="section-inner hero-grid">
+        <div>
+          <div class="eyebrow reveal">Performance creativo / Media buying / Video ads</div>
+          <h1 class="hero-title reveal">Anuncios que entran como cine. <span>Campañas que venden.</span></h1>
+          <p class="hero-copy reveal">Soy Jorge Flechas, estratega digital y trafficker. Construyo campañas de alto rendimiento en Google, TikTok y Meta con estrategia, creatividad persuasiva, lectura de datos y piezas audiovisuales hechas para capturar atención desde el primer segundo.</p>
+          <div class="hero-actions reveal">
+            <a class="btn primary magnetic" href="#servicios">Ver servicios</a>
+            <a class="btn magnetic" href="#metodo">Explorar método</a>
+          </div>
+        </div>
+
+        <div class="hero-media reveal">
+          <div class="portrait-frame parallax-img">
+            <img src="assets/jorge-portrait-shadow-800.jpg"
+                 srcset="assets/jorge-portrait-shadow-480.jpg 320w,
+                         assets/jorge-portrait-shadow-800.jpg 533w,
+                         assets/jorge-portrait-shadow-750.jpg 750w,
+                         assets/jorge-portrait-shadow.jpeg 1066w"
+                 sizes="(max-width: 720px) 92vw, (max-width: 1040px) 88vw, 480px"
+                 width="1066" height="1600" fetchpriority="high" decoding="async"
+                 alt="Jorge Flechas, trafficker digital y editor de video, retrato en blanco y negro" />
+          </div>
+          <aside class="signal-card">
+            <strong>Signal first</strong>
+            <p>Hooks, data, edición y pauta trabajando como una sola máquina de crecimiento.</p>
+          </aside>
+        </div>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Google Ads</span><span>Meta Ads</span><span>TikTok Ads</span><span>Video Editing</span><span>Funnels</span><span>Creative Strategy</span><span>Conversión</span>
+        </div>
+        <div class="ticker-track">
+          <span>Google Ads</span><span>Meta Ads</span><span>TikTok Ads</span><span>Video Editing</span><span>Funnels</span><span>Creative Strategy</span><span>Conversión</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="vision">
+      <span class="depth-line two"></span>
+      <div class="section-inner cinema-grid">
+        <div class="image-slab reveal parallax-img">
+          <img src="assets/jorge-door-portrait-800.jpg"
+                 srcset="assets/jorge-door-portrait-480.jpg 480w,
+                         assets/jorge-door-portrait-800.jpg 800w,
+                         assets/jorge-door-portrait-1100.jpg 1100w,
+                         assets/jorge-door-portrait.jpeg 1600w"
+                 sizes="(max-width: 1040px) 90vw, 470px"
+                 width="1600" height="1534" loading="lazy" decoding="async"
+                 alt="Jorge Flechas en retrato cinematográfico a contraluz" />
+        </div>
+        <div>
+          <p class="kicker reveal">No hago anuncios. Construyo percepción.</p>
+          <h2 class="reveal">Una marca se vuelve rentable cuando se ve inevitable.</h2>
+          <p class="lead reveal">Mi trabajo combina análisis estratégico, psicología de venta, storytelling, hooks visuales y ejecución técnica para transformar ideas en marcas memorables. Donde otros ven tráfico, yo busco autoridad, deseo, retención y conversión real.</p>
+          <div class="stats-row reveal">
+            <div class="stat"><strong>3</strong><span>Plataformas clave</span></div>
+            <div class="stat"><strong>360</strong><span>Estrategia integral</span></div>
+            <div class="stat"><strong>1s</strong><span>Hook de atención</span></div>
+            <div class="stat"><strong>IA</strong><span>Ventaja creativa</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="section-inner">
+        <p class="kicker reveal">Servicios</p>
+        <h2 class="reveal">Estrategia, pauta y piezas que aceleran decisiones.</h2>
+        <p class="lead reveal">Desde el mensaje inicial hasta el escalamiento, cada capa está pensada para que la marca conecte con la audiencia correcta y convierta con consistencia.</p>
+
+        <div class="services">
+          <article class="service-card reveal magnetic">
+            <span class="num">01</span>
+            <h3>Campañas de alto rendimiento</h3>
+            <p>Planificación, estructura, segmentación, optimización y escalamiento de campañas orientadas a ventas, leads, tráfico, interacción y posicionamiento.</p>
+            <ul>
+              <li>Google Ads</li>
+              <li>Meta Ads</li>
+              <li>TikTok Ads</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal magnetic">
+            <span class="num">02</span>
+            <h3>Estrategia creativa</h3>
+            <p>Ángulos de comunicación, hooks, guiones, estructuras persuasivas y mensajes diseñados para detener el scroll y convertir atención en acción.</p>
+            <ul>
+              <li>Hooks visuales</li>
+              <li>Storytelling</li>
+              <li>Psicología de venta</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal magnetic">
+            <span class="num">03</span>
+            <h3>Video ads & postproducción</h3>
+            <p>Edición profesional con ritmo, retención y lenguaje de plataforma para crear piezas audiovisuales dinámicas, cinematográficas y listas para pauta.</p>
+            <ul>
+              <li>Premiere Pro</li>
+              <li>DaVinci Resolve</li>
+              <li>After Effects</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="metodo">
+      <div class="section-inner process-wrap">
+        <div class="sticky-col">
+        <div class="sticky-copy">
+          <p class="kicker reveal">Método</p>
+          <h2 class="reveal">Del insight al impacto medible.</h2>
+          <p class="lead reveal">La experiencia está diseñada como una producción: diagnóstico, concepto, ejecución, medición y optimización. Cada fase reduce ruido y aumenta precisión.</p>
+        </div>
+        </div>
+
+        <div class="process-list">
+          <article class="process-step reveal">
+            <span>ACT I</span>
+            <div>
+              <h3>Diagnóstico del mercado</h3>
+              <p>Analizo oferta, audiencia, fricciones, competidores, métricas y comportamiento del consumidor para encontrar los puntos de mayor oportunidad.</p>
+            </div>
+          </article>
+          <article class="process-step reveal">
+            <span>ACT II</span>
+            <div>
+              <h3>Arquitectura de campaña</h3>
+              <p>Defino objetivos, estructura, presupuestos, audiencias, embudos, mensajes y eventos clave para que la pauta tenga dirección desde el inicio.</p>
+            </div>
+          </article>
+          <article class="process-step reveal">
+            <span>ACT III</span>
+            <div>
+              <h3>Producción creativa</h3>
+              <p>Construyo piezas con hooks, ritmo, prueba social, tensión narrativa y cierres claros, adaptadas a Google, TikTok, Meta y ecommerce.</p>
+            </div>
+          </article>
+          <article class="process-step reveal">
+            <span>ACT IV</span>
+            <div>
+              <h3>Optimización y escala</h3>
+              <p>Leo CTR, CPA, ROAS, retención, frecuencia y calidad de conversión para iterar, apagar ruido, duplicar ganadores y sostener crecimiento.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner split-scene">
+        <div class="editor-panel reveal">
+          <p class="kicker">Creative engine</p>
+          <h2>Edición con intención de venta.</h2>
+          <p class="lead">CapCut, Adobe Premiere Pro, DaVinci Resolve y After Effects al servicio de piezas más claras, rápidas y persuasivas. El objetivo no es solo verse bien: es sostener atención y mover decisiones.</p>
+          <div class="timeline" aria-label="Línea de edición visual">
+            <div class="clip"><span>Hook</span><div class="bar" style="width: 92%"></div><small>00:01</small></div>
+            <div class="clip"><span>Deseo</span><div class="bar" style="width: 74%"></div><small>00:08</small></div>
+            <div class="clip"><span>Prueba</span><div class="bar" style="width: 86%"></div><small>00:16</small></div>
+            <div class="clip"><span>CTA</span><div class="bar" style="width: 58%"></div><small>00:24</small></div>
+          </div>
+          <div class="tool-grid">
+            <div class="tool">CapCut</div>
+            <div class="tool">Premiere Pro</div>
+            <div class="tool">DaVinci Resolve</div>
+            <div class="tool">After Effects</div>
+          </div>
+        </div>
+
+        <div class="image-slab reveal parallax-img">
+          <img src="assets/jorge-front-portrait-800.jpg"
+                 srcset="assets/jorge-front-portrait-480.jpg 320w,
+                         assets/jorge-front-portrait-800.jpg 533w,
+                         assets/jorge-front-portrait-750.jpg 750w,
+                         assets/jorge-front-portrait.jpeg 1066w"
+                 sizes="(max-width: 1040px) 90vw, 600px"
+                 width="1066" height="1600" loading="lazy" decoding="async"
+                 alt="Retrato frontal de Jorge Flechas en su espacio de edición" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <p class="kicker reveal">Formas de trabajar</p>
+        <h2 class="reveal">Tres niveles para construir crecimiento digital.</h2>
+        <div class="offer-grid">
+          <article class="offer reveal magnetic">
+            <h3>Launch</h3>
+            <p>Para marcas que necesitan salir con claridad, estructura y primeras pruebas de mercado.</p>
+            <ul>
+              <li>Diagnóstico estratégico</li>
+              <li>Set up de campañas</li>
+              <li>Primer mapa de anuncios</li>
+              <li>Lectura inicial de métricas</li>
+            </ul>
+          </article>
+          <article class="offer featured reveal magnetic">
+            <h3>Scale</h3>
+            <p>Para negocios que ya tienen tracción y necesitan mejorar conversión, creatividad y escalamiento.</p>
+            <ul>
+              <li>Optimización continua</li>
+              <li>Creatividades por ángulo</li>
+              <li>Testing de audiencias</li>
+              <li>Reporte y decisiones accionables</li>
+            </ul>
+          </article>
+          <article class="offer reveal magnetic">
+            <h3>Cinematic Ads</h3>
+            <p>Para marcas que necesitan piezas audiovisuales de alto impacto adaptadas al lenguaje de cada plataforma.</p>
+            <ul>
+              <li>Guion y estructura</li>
+              <li>Edición dinámica</li>
+              <li>Postproducción</li>
+              <li>Versiones para pauta</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== CERTIFICACIONES =============== -->
+    <section class="section" id="certificaciones">
+      <div class="section-inner">
+        <p class="kicker reveal">Certificaciones</p>
+        <h2 class="reveal">Certificado donde<br>de verdad pauto.</h2>
+        <p class="lead reveal">Dos plataformas con certificación oficial vigente. Prefiero decirte exactamente en qué estoy certificado antes que llenar la página de sellos.</p>
+
+        <div class="certs">
+          <article class="cert reveal">
+            <span class="cert-mark">
+              <svg viewBox="0 0 48 48" width="27" height="27" role="img" aria-label="Meta">
+                <path d="M24 24C20.4 17.4 15.4 14.4 11.4 14.4 6.6 14.4 4 18.6 4 24s2.6 9.6 7.4 9.6c4 0 9-3 12.6-9.6 3.6-6.6 8.6-9.6 12.6-9.6 4.8 0 7.4 4.2 7.4 9.6s-2.6 9.6-7.4 9.6c-4 0-9-3-12.6-9.6Z"
+                      fill="none" stroke="#0081FB" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div>
+              <h3>Meta Ads</h3>
+              <p>Certificación oficial de Meta. Facebook, Instagram y WhatsApp: conversión, leads, ecommerce y remarketing.</p>
+            </div>
+            <span class="cert-badge">Certificado</span>
+          </article>
+
+          <article class="cert reveal">
+            <span class="cert-mark">
+              <svg viewBox="0 0 48 48" width="27" height="27" fill="none" role="img" aria-label="TikTok">
+                <g transform="translate(-1.7,-1.7)" stroke="#25F4EE"><circle cx="17.5" cy="31.5" r="8.4" stroke-width="6.6"/><path d="M29.2 6.2v25.3" stroke-width="7"/><path d="M29.2 6.6c.5 7.1 5.6 12.1 12.8 12.7" stroke-width="6.6"/></g>
+                <g transform="translate(1.7,1.7)" stroke="#FE2C55"><circle cx="17.5" cy="31.5" r="8.4" stroke-width="6.6"/><path d="M29.2 6.2v25.3" stroke-width="7"/><path d="M29.2 6.6c.5 7.1 5.6 12.1 12.8 12.7" stroke-width="6.6"/></g>
+                <g stroke="#0f0f0f"><circle cx="17.5" cy="31.5" r="8.4" stroke-width="6.6"/><path d="M29.2 6.2v25.3" stroke-width="7"/><path d="M29.2 6.6c.5 7.1 5.6 12.1 12.8 12.7" stroke-width="6.6"/></g>
+              </svg>
+            </span>
+            <div>
+              <h3>TikTok Ads</h3>
+              <p>Certificación oficial de TikTok. Spark Ads, In-Feed y contenido nativo pensado para el lenguaje de la plataforma.</p>
+            </div>
+            <span class="cert-badge">Certificado</span>
+          </article>
+        </div>
+
+        <p class="cert-note reveal">También opero campañas en Google Ads, pero no tengo certificación oficial en esa plataforma y no te la voy a vender como si la tuviera.</p>
+      </div>
+    </section>
+
+    <!-- =============== MERCADOS + MAPA =============== -->
+    <section class="section" id="mercados">
+      <div class="section-inner">
+        <p class="kicker reveal">Mercados</p>
+        <h2 class="reveal">La pauta no tiene<br>fronteras. Tú tampoco.</h2>
+        <p class="lead reveal">Meta y TikTok se segmentan por mercado, idioma y comportamiento, no por dónde esté sentado quien las opera. Estos son los mercados de habla hispana que cubro, incluido el hispano de Estados Unidos.</p>
+
+        <div class="mapa reveal">
+          <span class="mapa-count"><strong id="mapaN">21</strong> mercados</span>
+          <img src="assets/mapa-mundo.svg" alt="Mapa del mundo con los mercados marcados"
+               width="1000" height="385" loading="lazy" decoding="async" />
+          <svg class="mapa-ov" id="mapaOv" viewBox="0 0 1000 385" aria-hidden="true"></svg>
+        </div>
+
+        <ul class="paises reveal" id="paises">
+            <li data-iso="CO">Colombia</li>
+            <li data-iso="MX">México</li>
+            <li data-iso="US">Estados Unidos</li>
+            <li data-iso="ES">España</li>
+            <li data-iso="AR">Argentina</li>
+            <li data-iso="CL">Chile</li>
+            <li data-iso="PE">Perú</li>
+            <li data-iso="EC">Ecuador</li>
+            <li data-iso="VE">Venezuela</li>
+            <li data-iso="BO">Bolivia</li>
+            <li data-iso="PY">Paraguay</li>
+            <li data-iso="UY">Uruguay</li>
+            <li data-iso="PA">Panamá</li>
+            <li data-iso="CR">Costa Rica</li>
+            <li data-iso="GT">Guatemala</li>
+            <li data-iso="HN">Honduras</li>
+            <li data-iso="SV">El Salvador</li>
+            <li data-iso="NI">Nicaragua</li>
+            <li data-iso="DO">República Dominicana</li>
+            <li data-iso="PR">Puerto Rico</li>
+            <li data-iso="CU">Cuba</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =============== QUE INCLUYE =============== -->
+    <section class="section" id="incluye">
+      <div class="section-inner">
+        <p class="kicker reveal">Cómo trabajo</p>
+        <h2 class="reveal">No vendo informes.<br>Instalo el sistema.</h2>
+        <p class="lead reveal">No te entrego un PDF con teoría. Esto es lo que pasa dentro de tu negocio cuando entramos a trabajar.</p>
+
+        <div class="incluye">
+          <div class="inc reveal">
+            <span>01</span>
+            <h3>Diagnóstico y auditoría</h3>
+            <p>Reviso oferta, audiencia, competencia y todo lo que ya está corriendo. Antes de tocar un peso, sé dónde se está fugando.</p>
+          </div>
+          <div class="inc reveal">
+            <span>02</span>
+            <h3>Arquitectura de la oferta</h3>
+            <p>Ángulo, promesa, objeciones y garantía. Si la oferta no está clara, ninguna campaña la salva.</p>
+          </div>
+          <div class="inc reveal">
+            <span>03</span>
+            <h3>Medición bien puesta</h3>
+            <p>Píxel, API de conversiones, eventos y GA4. Sin esto optimizas a ciegas, y la mitad de las cuentas que audito lo están.</p>
+          </div>
+          <div class="inc reveal">
+            <span>04</span>
+            <h3>Producción de creativos</h3>
+            <p>Guion, edición y versiones por ángulo. Las piezas se hacen para pauta, no se reciclan del orgánico.</p>
+          </div>
+          <div class="inc reveal">
+            <span>05</span>
+            <h3>Campañas y optimización</h3>
+            <p>Estructura, segmentación, presupuestos y pujas. Reviso a diario y muevo lo que hay que mover.</p>
+          </div>
+          <div class="inc reveal">
+            <span>06</span>
+            <h3>Reporte y decisiones</h3>
+            <p>Cada semana: qué funcionó, qué apagué, qué escalo y por qué. En números, no en adjetivos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== RESENAS ===============
+         Esta seccion esta OCULTA a proposito: no hay resenas inventadas.
+
+         Para activarla:
+           1. Quita la palabra  hidden  de la etiqueta <section> de abajo.
+           2. Duplica un bloque <article class="resena"> por cada resena real.
+           3. Borra los bloques de ejemplo que no uses.
+
+         Plantilla de una resena:
+
+           <article class="resena reveal">
+             <p class="resena-txt">"Texto literal de lo que te dijo el cliente."</p>
+             <div class="resena-pie">
+               <div>
+                 <b>Nombre Apellido</b>
+                 <small>Cargo · Empresa</small>
+               </div>
+             </div>
+           </article>
+    ============================================== -->
+    <section class="section" id="resenas" hidden>
+      <div class="section-inner">
+        <p class="kicker reveal">Reseñas</p>
+        <h2 class="reveal">Lo que dicen<br>quienes ya trabajaron conmigo.</h2>
+        <div class="resenas">
+          <!-- pega aquí las reseñas reales -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== CLIENTES ===============
+         Igual que arriba: oculta hasta que pongas empresas reales.
+         Quita  hidden  y añade un <div class="cliente">Nombre</div> por cada una.
+    ============================================== -->
+    <section class="section" id="clientes" hidden>
+      <div class="section-inner">
+        <p class="kicker reveal">Clientes</p>
+        <h2 class="reveal">Marcas que ya<br>pautan conmigo.</h2>
+        <div class="clientes">
+          <!-- <div class="cliente reveal">Nombre de la empresa</div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner faq">
+        <div>
+          <p class="kicker reveal">FAQ</p>
+          <h2 class="reveal">Preguntas antes de encender campañas.</h2>
+        </div>
+        <div class="reveal">
+          <details open>
+            <summary>¿Qué tipo de marcas puedes ayudar?</summary>
+            <p>Marcas personales, ecommerce, servicios, negocios locales y proyectos digitales que necesitan convertir mejor su atención en leads, ventas o autoridad.</p>
+          </details>
+          <details>
+            <summary>¿Trabajas solo pauta o también creatividad?</summary>
+            <p>Trabajo ambas capas. La pauta necesita una base técnica fuerte, pero el rendimiento nace cuando el mensaje, el formato y la edición capturan atención con precisión.</p>
+          </details>
+          <details>
+            <summary>¿Cómo mides el éxito?</summary>
+            <p>Depende del objetivo: ventas, leads, CPA, ROAS, CTR, calidad de tráfico, retención de video, frecuencia, posicionamiento o crecimiento sostenible del canal.</p>
+          </details>
+          <details>
+            <summary>¿Puedes adaptar contenido para cada plataforma?</summary>
+            <p>Sí. Cada plataforma tiene lenguaje, velocidad y patrones de consumo diferentes. Por eso adapto piezas, hooks, duraciones y estructuras para Meta, TikTok, Google y ecommerce.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section finale" id="contacto">
+      <div class="section-inner">
+        <p class="kicker reveal">Siguiente escena</p>
+        <h2 class="reveal">Hagamos que tu marca se vea grande y convierta en serio.</h2>
+        <p class="reveal">Si tienes una idea, una oferta o una marca lista para crecer, puedo ayudarte a convertirla en una experiencia visual, estratégica y medible.</p>
+        <div class="contact-strip reveal">
+          <a class="btn primary magnetic" href="https://wa.me/573041216884?text=Hola%20Jorge%2C%20vengo%20de%20tu%20web%20y%20quiero%20hablar%20de%20un%20proyecto" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+          <a class="btn magnetic" href="mailto:alpha_blind371@proton.me?subject=Proyecto%20desde%20la%20web">Enviar correo</a>
+        </div>
+
+        <ul class="contact-list reveal">
+          <li>
+            <span>WhatsApp</span>
+            <a href="https://wa.me/573041216884?text=Hola%20Jorge%2C%20vengo%20de%20tu%20web%20y%20quiero%20hablar%20de%20un%20proyecto" target="_blank" rel="noopener noreferrer">+57 304 121 6884</a>
+          </li>
+          <li>
+            <span>Correo</span>
+            <a href="mailto:alpha_blind371@proton.me?subject=Proyecto%20desde%20la%20web">alpha_blind371@proton.me</a>
+          </li>
+          <li>
+            <span>Instagram</span>
+            <a href="https://www.instagram.com/jflechas371" target="_blank" rel="noopener noreferrer">@jflechas371</a>
+          </li>
+          <li>
+            <span>YouTube</span>
+            <a href="https://www.youtube.com/@FlechasJR" target="_blank" rel="noopener noreferrer">@FlechasJR</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="brand magnetic" href="#inicio" aria-label="Ir al inicio">
+        <img class="brand-mark" src="assets/logo-fjr.png" alt="" width="188" height="288" decoding="async" />
+        <span>Jorge Flechas</span>
+      </a>
+
+      <nav class="footer-social" aria-label="Contacto y redes">
+        <a href="https://wa.me/573041216884?text=Hola%20Jorge%2C%20vengo%20de%20tu%20web%20y%20quiero%20hablar%20de%20un%20proyecto" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="mailto:alpha_blind371@proton.me?subject=Proyecto%20desde%20la%20web">Correo</a>
+        <a href="https://www.instagram.com/jflechas371" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.youtube.com/@FlechasJR" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </nav>
+
+      <p class="footer-legal">
+        © <span id="year">2026</span> Jorge Flechas · Trafficker digital y editor de video · Colombia<br />
+        Google Ads · Meta Ads · TikTok Ads · Video ads y postproducción
+      </p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/573041216884?text=Hola%20Jorge%2C%20vengo%20de%20tu%20web%20y%20quiero%20hablar%20de%20un%20proyecto" target="_blank" rel="noopener noreferrer"
+     aria-label="Escribir a Jorge Flechas por WhatsApp">Hablemos</a>
+
+
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/app.js?v=2"></script>
+</body>
+</html>

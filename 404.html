@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#050507" />
+  <title>Página no encontrada | Jorge Flechas</title>
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #050507;
+      --paper: #f1efe9;
+      --red: #ff334e;
+      --line: rgba(241, 239, 233, 0.14);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 32px 24px;
+      color: var(--paper);
+      font-family: "Inter", system-ui, sans-serif;
+      text-align: center;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255, 51, 78, 0.14), transparent 24rem),
+        radial-gradient(circle at 84% 72%, rgba(48, 227, 255, 0.10), transparent 26rem),
+        linear-gradient(180deg, #020203, #090a0d 50%, #050507);
+    }
+
+    .code {
+      color: var(--red);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 0;
+      font-size: clamp(2.4rem, 8vw, 4.6rem);
+      font-weight: 900;
+      line-height: 0.94;
+      text-transform: uppercase;
+    }
+
+    p {
+      max-width: 480px;
+      margin: 22px auto 0;
+      color: rgba(241, 239, 233, 0.68);
+      line-height: 1.6;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+      margin-top: 34px;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 52px;
+      padding: 0 24px;
+      color: var(--paper);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      transition: border-color 240ms ease, transform 240ms ease;
+    }
+
+    a.primary {
+      color: var(--black);
+      background: var(--paper);
+      border-color: var(--paper);
+    }
+
+    a:hover { transform: translateY(-3px); border-color: rgba(241, 239, 233, 0.6); }
+
+    a:focus-visible { outline: 2px solid #30e3ff; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="code">Error 404 / Escena no encontrada</p>
+    <h1>Esta toma<br />no existe.</h1>
+    <p>La página que buscas se movió o nunca estuvo aquí. Volvamos al principio.</p>
+    <div class="actions">
+      <a class="primary" href="/">Ir al inicio</a>
+      <a href="https://wa.me/573041216884?text=Hola%20Jorge%2C%20vengo%20de%20tu%20web%20y%20quiero%20hablar%20de%20un%20proyecto"
+         target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+    </div>
+  </main>
+</body>
+</html>

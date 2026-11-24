@@ -1,0 +1,199 @@
+=======================================================================
+ JORGE FLECHAS — flechastrafik.online
+ Que hay nuevo y como rellenar lo que quedo preparado
+=======================================================================
+
+
+-----------------------------------------------------------------------
+ 1. COMO SUBIRLO
+-----------------------------------------------------------------------
+
+1) Hostinger -> hPanel -> Administrador de archivos -> carpeta public_html
+2) Activa "Mostrar archivos ocultos" (si no, el .htaccess no se sube)
+3) Borra lo que haya dentro y sube TODO el contenido de esta carpeta
+4) Entra a https://flechastrafik.online y comprueba
+
+Si algo falla: renombra .htaccess a htaccess.txt y vuelve al estado anterior.
+
+
+-----------------------------------------------------------------------
+ 2. QUE SE AÑADIO EN ESTA VERSION
+-----------------------------------------------------------------------
+
+CERTIFICACIONES   Meta Ads y TikTok Ads, con sello "Certificado".
+                  Incluye una linea que aclara que operas Google Ads
+                  pero NO estas certificado en esa plataforma.
+
+MERCADOS + MAPA   Mapa mundi de puntos con 21 mercados de habla hispana
+                  marcados en rojo y con pin. Geometria real (Natural
+                  Earth, dominio publico). Pesa 7 KB comprimido.
+
+COMO TRABAJO      Seis bloques con lo que pasa dentro del negocio:
+                  diagnostico, oferta, medicion, creativos, campañas
+                  y reporte.
+
+RESEÑAS           Seccion montada pero OCULTA. Ver punto 4.
+CLIENTES          Seccion montada pero OCULTA. Ver punto 4.
+
+
+-----------------------------------------------------------------------
+ 3. CAMBIAR LOS PAISES DEL MAPA
+-----------------------------------------------------------------------
+
+Todo sale de UNA sola lista en index.html. Busca:
+
+    <ul class="paises reveal" id="paises">
+
+Cada pais es una linea:
+
+    <li data-iso="CO">Colombia</li>
+
+Para QUITAR un pais: borra su linea.
+Para AÑADIR uno: copia una linea y cambia el codigo y el nombre.
+
+El mapa y el contador se actualizan solos, no hay que tocar nada mas.
+
+Codigos utiles:
+  CO Colombia    MX Mexico      US Estados Unidos   ES España
+  AR Argentina   CL Chile       PE Peru             EC Ecuador
+  VE Venezuela   BO Bolivia     PY Paraguay         UY Uruguay
+  PA Panama      CR Costa Rica  GT Guatemala        HN Honduras
+  SV El Salvador NI Nicaragua   DO Rep. Dominicana  PR Puerto Rico
+  CU Cuba        BR Brasil      PT Portugal         IT Italia
+  CA Canada      GB Reino Unido FR Francia          DE Alemania
+
+Hay 175 paises disponibles en assets/paises.json si necesitas otro.
+
+  >>> OJO CON EL TEXTO <<<
+  Ahora mismo la seccion dice "mercados que cubro", que es cierto:
+  Meta y TikTok segmentan por pais, no por donde estes tu.
+  Si algun dia quieres que diga "paises donde YA he trabajado",
+  cambia el titulo y el parrafo y deja solo los paises reales.
+  No es lo mismo y un cliente lo puede preguntar.
+
+
+-----------------------------------------------------------------------
+ 4. ACTIVAR RESEÑAS Y CLIENTES
+-----------------------------------------------------------------------
+
+Las dos secciones estan escritas y con estilos listos, pero OCULTAS.
+Estan vacias a proposito: no puse reseñas ni clientes inventados.
+
+RESEÑAS
+-------
+1) Busca en index.html:      <section class="section" id="resenas" hidden>
+2) Borra la palabra          hidden
+3) Dentro de <div class="resenas"> pega una por cada reseña real:
+
+     <article class="resena reveal">
+       <p class="resena-txt">"Texto literal de lo que te dijo."</p>
+       <div class="resena-pie">
+         <div>
+           <b>Nombre Apellido</b>
+           <small>Cargo · Empresa</small>
+         </div>
+       </div>
+     </article>
+
+Con 3 reseñas se ve perfecto. Con 1 o 2 tambien funciona.
+
+CLIENTES
+--------
+1) Busca:                    <section class="section" id="clientes" hidden>
+2) Borra la palabra          hidden
+3) Dentro de <div class="clientes"> pega una por empresa:
+
+     <div class="cliente reveal">Nombre de la empresa</div>
+
+Consejo: pide permiso antes de poner el nombre de un cliente.
+
+COMO CONSEGUIRLAS
+-----------------
+Escribe por WhatsApp a los clientes con los que ya trabajaste y pideles
+dos frases. Funciona mejor si les das algo concreto que responder:
+  "¿Que problema tenias antes de trabajar conmigo y que cambio?"
+
+
+-----------------------------------------------------------------------
+ 5. SI EDITAS EL JAVASCRIPT
+-----------------------------------------------------------------------
+
+Los scripts propios llevan version en el index:
+
+    assets/js/boot.js?v=2
+    assets/js/app.js?v=2
+
+Si cambias uno de esos archivos, sube el numero a ?v=3 en el index.
+Si no, el navegador de quien ya visito la web seguira usando el viejo
+durante 7 dias.
+
+
+-----------------------------------------------------------------------
+ 6. LO QUE SIGUE DEPENDIENDO DE TI
+-----------------------------------------------------------------------
+
+[ ] SSL activado en Hostinger (hPanel -> Seguridad -> SSL).
+    OBLIGATORIO antes de subir el .htaccess: fuerza HTTPS.
+
+[ ] Verificacion en dos pasos en tu cuenta de Hostinger.
+
+[ ] Bloqueo de transferencia del dominio.
+
+[ ] Dar de alta la web en Google Search Console y enviar
+    https://flechastrafik.online/sitemap.xml
+
+[ ] Conseguir 3 reseñas reales y activarlas (punto 4).
+
+[ ] Subir un video tuyo. Eres editor de video y no hay ni uno.
+
+
+-----------------------------------------------------------------------
+ 7. CREDITOS
+-----------------------------------------------------------------------
+
+El mapa se genero con datos de Natural Earth (naturalearthdata.com),
+dominio publico, sin restricciones de uso.
+
+
+-----------------------------------------------------------------------
+ 8. TU LOGO Y LOS ICONOS
+-----------------------------------------------------------------------
+
+Archivos generados a partir del logo que enviaste:
+
+  favicon.png              96x96  - el icono de la pestaña del navegador
+  apple-touch-icon.png    180x180 - el icono al guardar la web en el movil
+  assets/logo-fjr.png     188x288 - el monograma, junto a tu nombre
+  assets/logo-fjr-completo.png    - el logo entero, CON "FLECHAS JR"
+
+En la cabecera y en el pie se usa el monograma SIN el texto
+"FLECHAS JR". No es un descuido: al lado ya pone "Jorge Flechas",
+y a 32 pixeles de alto ese texto solo ensucia la marca.
+
+El logo completo queda en assets/ por si lo quieres para otra cosa
+(portada al compartir, tarjetas, el canal de YouTube).
+
+Se elimino favicon.svg. Ya no se usa.
+
+
+-----------------------------------------------------------------------
+ 9. LOS LOGOS DE META Y TIKTOK
+-----------------------------------------------------------------------
+
+Los dos sellos de la seccion CERTIFICACIONES son SVG dibujados a mano,
+dentro del propio index.html. No son los archivos oficiales de Meta
+ni de TikTok.
+
+Funcionan y se ven bien, pero si quieres los oficiales:
+
+  Meta   -> about.meta.com/brand/resources/
+  TikTok -> tiktok.com/business/es/brand-guidelines
+
+Descargalos en SVG, guardalos en assets/ y dime: te cambio los dos
+sellos en un minuto.
+
+Una advertencia que te interesa: las guias de marca de ambas permiten
+usar el logo para decir que estas certificado, pero NO permiten
+modificarlo (ni recortarlo, ni cambiarle el color, ni meterlo dentro
+de otra forma). Si algun dia los pones oficiales, va el archivo tal
+cual te lo dan.

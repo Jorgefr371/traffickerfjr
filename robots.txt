@@ -1,0 +1,8 @@
+# flechastrafik.online
+User-agent: *
+Allow: /
+
+# Nada que ocultar, pero tampoco hace falta que rastreen esto
+Disallow: /assets/js/
+
+Sitemap: https://flechastrafik.online/sitemap.xml

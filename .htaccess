@@ -1,0 +1,184 @@
+# =====================================================================
+#  flechastrafik.online — Jorge Flechas
+#  Seguridad y rendimiento del servidor (Hostinger / LiteSpeed / Apache)
+#
+#  Este archivo va en la MISMA carpeta que el index.html (public_html).
+#  Empieza por un punto, asi que esta OCULTO: en el Administrador de
+#  archivos de Hostinger activa "Mostrar archivos ocultos" para verlo.
+#
+#  Si algo dejara de funcionar tras subirlo, renombralo a "htaccess.txt"
+#  y la web vuelve al estado anterior al instante.
+# =====================================================================
+
+
+# ---------------------------------------------------------------------
+#  1. TODO EL TRAFICO POR HTTPS Y SIN www
+# ---------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://flechastrafik.online/$1 [R=301,L]
+
+  RewriteCond %{HTTP_HOST} ^www\.flechastrafik\.online$ [NC]
+  RewriteRule ^(.*)$ https://flechastrafik.online/$1 [R=301,L]
+</IfModule>
+
+
+# ---------------------------------------------------------------------
+#  2. CABECERAS DE SEGURIDAD
+# ---------------------------------------------------------------------
+<IfModule mod_headers.c>
+
+  # Obliga al navegador a usar siempre HTTPS durante un ano.
+  Header always set Strict-Transport-Security "max-age=31536000"
+
+  # Impide que el navegador "adivine" el tipo de archivo.
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Nadie puede meter tu web dentro de un iframe ajeno (clickjacking).
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # No filtra la URL completa al salir de tu web.
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Bloquea camara, microfono, ubicacion y pagos.
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), fullscreen=(self)"
+
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set X-Permitted-Cross-Domain-Policies "none"
+
+  # ---- Content Security Policy ----
+  # Dice exactamente que se puede cargar. Todo lo demas queda bloqueado.
+  #
+  # El "sha256-..." es la huella del bloque de datos estructurados
+  # (JSON-LD) del index.html.
+  #
+  #  >>> IMPORTANTE <<<
+  #  Si editas ese bloque JSON-LD, la huella cambia. Solucion facil:
+  #  cambia   script-src 'self' 'sha256-...';
+  #  por      script-src 'self' 'unsafe-inline';
+  #  Sigue siendo seguro para una web sin formularios ni base de datos.
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-LJSrMCZL8MTJJtjSCffPQ6cPipQ3Rstk2Z5qmUkPzWw='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; media-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+
+  Header unset X-Powered-By
+  Header always unset X-Powered-By
+</IfModule>
+
+
+# ---------------------------------------------------------------------
+#  3. QUE NADIE PUEDA FISGAR TUS CARPETAS
+# ---------------------------------------------------------------------
+Options -Indexes
+ServerSignature Off
+
+
+# ---------------------------------------------------------------------
+#  4. BLOQUEAR ARCHIVOS QUE NUNCA DEBEN VERSE DESDE FUERA
+# ---------------------------------------------------------------------
+<Files "LEEME.txt">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</Files>
+
+<FilesMatch "(^\.|\.(bak|backup|old|orig|save|swp|swo|tmp|temp|log|sql|sh|ini|conf|config|env|yml|yaml|md|zip|tar|gz|rar|7z|psd|ai|fla)$)">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+
+# ---------------------------------------------------------------------
+#  5. SOLO METODOS HTTP NORMALES
+# ---------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteCond %{REQUEST_METHOD} !^(GET|HEAD|POST|OPTIONS)$
+  RewriteRule .* - [F,L]
+</IfModule>
+
+
+# ---------------------------------------------------------------------
+#  6. ANTI HOTLINKING
+#     Impide que otras webs incrusten TUS fotos. Se permiten buscadores
+#     y redes para que las vistas previas al compartir sigan saliendo.
+# ---------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_REFERER} !^$
+  RewriteCond %{HTTP_REFERER} !flechastrafik\.online [NC]
+  RewriteCond %{HTTP_REFERER} !(google|bing|duckduckgo|facebook|instagram|twitter|x\.com|linkedin|whatsapp|t\.co|tiktok)\. [NC]
+  RewriteRule \.(jpe?g|png|gif|webp|svg)$ - [F,NC,L]
+</IfModule>
+
+
+# ---------------------------------------------------------------------
+#  7. BLOQUEAR ESCANERES CONOCIDOS
+# ---------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_USER_AGENT} (nikto|sqlmap|fimap|nessus|whatweb|openvas|jbrofuzz|libwww-perl|httrack|webcopier|teleport) [NC]
+  RewriteRule .* - [F,L]
+</IfModule>
+
+
+# ---------------------------------------------------------------------
+#  8. PAGINA DE ERROR PROPIA
+# ---------------------------------------------------------------------
+ErrorDocument 404 /404.html
+
+
+# ---------------------------------------------------------------------
+#  9. COMPRESION
+# ---------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+
+# ---------------------------------------------------------------------
+# 10. CACHE
+#     El HTML no se cachea, para que tus cambios se vean al instante.
+#     El JS lleva ?v=2 en el index, asi que puedes subirlo sin miedo:
+#     para forzar que se recargue, sube ese numero a ?v=3.
+# ---------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault                        "access plus 1 month"
+  ExpiresByType text/html               "access plus 0 seconds"
+  ExpiresByType text/css                "access plus 7 days"
+  ExpiresByType application/javascript  "access plus 7 days"
+  ExpiresByType application/json        "access plus 7 days"
+  ExpiresByType image/jpeg              "access plus 1 year"
+  ExpiresByType image/png               "access plus 1 year"
+  ExpiresByType image/webp              "access plus 1 year"
+  ExpiresByType image/svg+xml           "access plus 1 year"
+  ExpiresByType text/xml                "access plus 1 day"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+
+# ---------------------------------------------------------------------
+# 11. TIPOS MIME
+# ---------------------------------------------------------------------
+<IfModule mod_mime.c>
+  AddType image/svg+xml .svg
+  AddType application/javascript .js
+  AddType application/json .json
+  AddCharset UTF-8 .html .css .js .xml .txt .json
+</IfModule>
